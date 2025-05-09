@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary to Decimal Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Binary/Decimal Converter</h1>
+        <div class="toggle-container">
+            <button onclick="toggleMode()" id="toggleBtn">Switch to Decimal to Binary</button>
+        </div>
+        <div class="converter">
+            <input type="text" id="inputValue" placeholder="Enter a binary/decimal number" />
+            <button onclick="convert()">Convert</button>
+        </div>
+        <div class="result">
+            <h3>Result:</h3>
+            <span id="resultText">-</span>
+            <button onclick="copyToClipboard()">Copy</button>
+        </div>
+        <div class="history">
+            <h3>Conversion History:</h3>
+            <ul id="historyList"></ul>
+            <button onclick="clearHistory()">Clear History</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
